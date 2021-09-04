@@ -13,7 +13,7 @@
 <dependency>
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
-    <version>7.1.0</version>
+    <version>7.4.0</version>
     
 </dependency>
 <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
@@ -30,6 +30,12 @@
     <version>3.141.59</version>
 </dependency>
 
+<!-- https://mvnrepository.com/artifact/com.google.inject/guice -->
+<dependency>
+    <groupId>com.google.inject</groupId>
+    <artifactId>guice</artifactId>
+    <version>5.0.1</version>
+</dependency>
 
 </dependencies>
 
