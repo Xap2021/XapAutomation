@@ -3,7 +3,6 @@ package driverinstance;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
-import org.testng.annotations.Test;
 
 public class TestExecutionPriority 
 {

@@ -36,6 +36,5 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="F:/Automation/testng-7.1.0.jar"/>
-	<classpathentry kind="lib" path="F:/Automation/javax.mail.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

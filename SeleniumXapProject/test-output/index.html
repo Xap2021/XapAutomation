@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                    <span class="method-stats">6 methods, 2 failed,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,6 +103,11 @@
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="driverinstance.TestExecutionPriority" class="method navigator-link" hash-for-method="AddNewFamily005">AddNewFamily005</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="driverinstance.SendEmail" class="method navigator-link" hash-for-method="test">test</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -157,16 +162,14 @@
                   <a name="AddNewFamily005">
                   </a> <!-- AddNewFamily005 -->
                   <span class="method-name">AddNewFamily005</span>
-                  <div class="stack-trace">org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //1111div[@id=&apos;btnFamilySearchAdd&apos;]/a[@title=&apos;Add Family&apos;] because of the following error:
-SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//1111div[@id=&apos;btnFamilySearchAdd&apos;]/a[@title=&apos;Add Family&apos;]&apos; is not a valid XPath expression.
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: chrome not reachable
   (Session info: chrome=92.0.4515.159)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;ANGULARJS4&apos;, ip: &apos;192.168.68.102&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\chirag.qa\AppData\...}, goog:chromeOptions: {debuggerAddress: localhost:59537}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 54785518f7a3a90af4fd7b32b335d560
-*** Element info: {Using=xpath, value=//1111div[@id=&apos;btnFamilySearchAdd&apos;]/a[@title=&apos;Add Family&apos;]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\chirag.qa\AppData\...}, goog:chromeOptions: {debuggerAddress: localhost:65391}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 309f3044df628a3f68732021f65a0593
+*** Element info: {Using=xpath, value=//div[@id=&apos;btnFamilySearchAdd&apos;]/a[@title=&apos;Add Family&apos;]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -181,6 +184,31 @@ Session ID: 54785518f7a3a90af4fd7b32b335d560
 	at driverinstance.TestExecutionPriority.AddNewFamily005(TestExecutionPriority.java:32)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">driverinstance.SendEmail</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test">
+                  </a> <!-- test -->
+                  <span class="method-name">test</span>
+                  <div class="stack-trace">java.lang.NoClassDefFoundError: javax/activation/DataHandler
+	at driverinstance.SendEmail.test(SendEmail.java:47)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.ClassNotFoundException: javax.activation.DataHandler
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:636)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:182)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:519)
+	... 29 more
+... Removed 27 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -235,6 +263,7 @@ Session ID: 54785518f7a3a90af4fd7b32b335d560
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;driverinstance.TestExecutionPriority&quot;/&gt;
+      &lt;class name=&quot;driverinstance.SendEmail&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -248,7 +277,7 @@ Session ID: 54785518f7a3a90af4fd7b32b335d560
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -274,32 +303,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'login')
+data.setCell(0, 1, 'AddNewFamily005')
 data.setCell(0, 2, 'driverinstance.TestExecutionPriority')
-data.setCell(0, 3, 16252);
+data.setCell(0, 3, 87525);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'url')
+data.setCell(1, 1, 'login')
 data.setCell(1, 2, 'driverinstance.TestExecutionPriority')
-data.setCell(1, 3, 11043);
+data.setCell(1, 3, 15545);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'AddNewFamily005')
+data.setCell(2, 1, 'url')
 data.setCell(2, 2, 'driverinstance.TestExecutionPriority')
-data.setCell(2, 3, 9080);
+data.setCell(2, 3, 11116);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'OpenFamilyFromMenu004')
 data.setCell(3, 2, 'driverinstance.TestExecutionPriority')
-data.setCell(3, 3, 5121);
+data.setCell(3, 3, 5125);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'OpenMenu003')
 data.setCell(4, 2, 'driverinstance.TestExecutionPriority')
-data.setCell(4, 3, 5100);
+data.setCell(4, 3, 5101);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'test')
+data.setCell(5, 2, 'driverinstance.SendEmail')
+data.setCell(5, 3, 55);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 46 seconds</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -332,21 +365,30 @@ return data;
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">login</span>
-                <span class="method-start">11053 ms</span>
+                <span class="method-start">11136 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">OpenMenu003</span>
-                <span class="method-start">27310 ms</span>
+                <span class="method-start">26683 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">OpenFamilyFromMenu004</span>
-                <span class="method-start">32411 ms</span>
+                <span class="method-start">31785 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">AddNewFamily005</span>
-                <span class="method-start">37536 ms</span>
+                <span class="method-start">36914 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">driverinstance.SendEmail</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test</span>
+                <span class="method-start">124448 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
